@@ -186,3 +186,4 @@ jobs:
             docker build -t $DOCKER_LOGIN/$IMAGE_NAME -t $DOCKER_LOGIN/$IMAGE_NAME:$TAG .
             echo $DOCKER_PWD | docker login -u $DOCKER_LOGIN --password-stdin
             docker push $DOCKER_LOGIN/$IMAGE_NAME
+# course-CI-CD
