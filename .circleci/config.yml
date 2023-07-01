@@ -34,9 +34,10 @@ jobs:
           # app-dir: ~/project/package-directory/  # If your requirements.txt isn't in the root directory.
           # pip-dependency-file: test-requirements.txt  # if you have a different name for your requirements file, maybe one that combines your runtime and test requirements.
       - run:
-          run:
-            name: Run Tests
-            command: ~/.local/bin/pytest
+          name: run tests
+          command: |
+            . venv/bin/activate
+            python manage.py test
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows

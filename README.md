@@ -18,9 +18,7 @@ Here are the steps:
 -- Copy/paste the sample config generated on CCI for Python. 
 -- Change the "run tests" bit to a new section because this uses unittest not Django's built in test runner. 
 ```
-      - run:
-          name: Run Tests
-          command: ~/.local/bin/pytest
+      - ù
 ```
 -- Change the install dependencies to this: 
 ```
